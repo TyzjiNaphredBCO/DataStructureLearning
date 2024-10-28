@@ -1,18 +1,31 @@
-## Getting Started
+## Problem: Nested List Management
+Description: You are tasked with implementing a nested list management system using a stack of lists. Your program will support the following operations:
+- Add List: Create a new list with specified elements and push it onto the stack.
+- Remove List: Pop the top list from the stack and return its contents.
+- Add Element: Add an element to the top list without removing it.
+- Display Top List: Print the contents of the top list without removing it.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Input/Output Specification
+- Input: A series of commands (strings) that dictate the operations to be performed.
+  - ADD_LIST element1, element2, ... (to create a new list and add elements)
+  - REMOVE_LIST (to pop the top list)
+  - ADD_ELEMENT element (to add an element to the top list)
+  - DISPLAY (to display the top list's contents)
+- Output: For each REMOVE_LIST and DISPLAY command, output the result.
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## Example
+Input:
+> ADD_LIST apple, banana
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+> ADD_LIST cherry, date
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+> DISPLAY
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+> ADD_ELEMENT elderberry
 
-## Dependency Management
+> DISPLAY
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+> REMOVE_LIST
+
+> DISPLAY
