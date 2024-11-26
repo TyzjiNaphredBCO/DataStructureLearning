@@ -1,10 +1,4 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
@@ -21,7 +15,7 @@ Here’s a Java question that involves using a `Queue` and a `Map<String, Object
 
 ---
 
-**Question:** 
+##Question:
 
 You are tasked with implementing a `SupportTicketSystem` for a customer support center. This system will process incoming support tickets in a `Queue`. Each ticket is represented as a `Map<String, Object>`, which contains the following information:
 
