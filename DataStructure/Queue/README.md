@@ -1,4 +1,4 @@
-##Question:
+## Question:
 
 You are tasked with implementing a `SupportTicketSystem` for a customer support center. This system will process incoming support tickets in a `Queue`. Each ticket is represented as a `Map<String, Object>`, which contains the following information:
 
