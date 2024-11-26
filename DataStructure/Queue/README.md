@@ -1,20 +1,3 @@
-
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-
-Here’s a Java question that involves using a `Queue` and a `Map<String, Object>`. The problem tests understanding of queue operations and map manipulations.
-
----
-
 ##Question:
 
 You are tasked with implementing a `SupportTicketSystem` for a customer support center. This system will process incoming support tickets in a `Queue`. Each ticket is represented as a `Map<String, Object>`, which contains the following information:
