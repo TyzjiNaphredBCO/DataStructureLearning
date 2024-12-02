@@ -44,7 +44,7 @@ class SupportTicketSystem{
     }
 
     // Sort the ticket into which queue it should be added
-    public void sortPriority(Map<String, Object> ticket){
+    private void sortPriority(Map<String, Object> ticket){
         Integer ticketPriority = (Integer) ticket.get("priority");
         switch(ticketPriority){
             case 1 -> firstQueue.offer(ticket);           
