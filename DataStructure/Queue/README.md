@@ -36,8 +36,11 @@ ticket2.put("message", "System down!");
 supportSystem.addTicket(ticket1);
 supportSystem.addTicket(ticket2);
 
-System.out.println(supportSystem.processNextTicket()); // Should output ticket1 details
-System.out.println(supportSystem.processNextTicket()); // Should output ticket2 details
+System.out.println("Selected queue is empty? "+ supportSystem.isQueueEmpty(false, 1)); // Output true if queue is empty
+System.out.println("Current Ticket: "+ supportSystem.processNextTicket()); // Output ticket2 details
+System.out.println("Next ticket: "+ supportSystem.peekNextTicket()); // Output next ticket in priority
+System.out.println(supportSystem.isQueueEmpty(true)); // Output false if queue is empty
+System.out.println("Current Ticket: "+ supportSystem.processNextTicket()); // Output ticket1 details
 ```
 
 **Requirements:**
