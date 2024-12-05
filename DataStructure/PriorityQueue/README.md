@@ -1,18 +1,32 @@
-## Getting Started
+## Question:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Same question with queue but different usage.
 
-## Folder Structure
+**Example Usage:**
 
-The workspace contains two folders by default, where:
+```java
+SupportTicketSystem supportSystem = new SupportTicketSystem();
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Map<String, Object> ticket1 = new HashMap<>();
+ticket1.put("ticketId", "001");
+ticket1.put("priority", 2);
+ticket1.put("message", "Issue with logging in.");
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Map<String, Object> ticket2 = new HashMap<>();
+ticket2.put("ticketId", "002");
+ticket2.put("priority", 1);
+ticket2.put("message", "System down!");
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+supportSystem.addTicket(ticket1);
+supportSystem.addTicket(ticket2);
 
-## Dependency Management
+System.out.println("Selected queue is empty? "+ supportSystem.isQueueEmpty()); // Output true if queue is empty
+System.out.println("Current Ticket: "+ supportSystem.processNextTicket()); // Output ticket2 details
+System.out.println("Next ticket: "+ supportSystem.peekNextTicket()); // Output next ticket in priority
+System.out.println("Size of ticket queue: "+ supportSystem.getQueueSize()); // Output queue size
+System.out.println("Current Ticket: "+ supportSystem.processNextTicket()); // Output ticket1 details
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**Requirements:**
+- Use `PriorityQueue<Map<String, Object>>` for managing the tickets.
+- Handle the priority insertion for high-priority tickets.
