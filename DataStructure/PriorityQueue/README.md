@@ -1,6 +1,6 @@
 ## Question:
 
-Same question with [queue](../../Queue/README.md) but different usage.
+Same question with [queue](../Queue/README.md) but different usage.
 
 **Example Usage:**
 
