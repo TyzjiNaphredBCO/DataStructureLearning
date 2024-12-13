@@ -1,18 +1,17 @@
-## Getting Started
+## Question:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Same question with [queue](../Queue/README.md) but different usage.
 
-## Folder Structure
+**Example Usage:**
 
-The workspace contains two folders by default, where:
+```java
+System.out.println("Selected queue is empty? "+ supportSystem.isQueueEmpty()); // Output true if queue is empty
+System.out.println("Current Ticket: "+ supportSystem.processNextTicket()); // Output ticket2 details
+System.out.println("Next ticket: "+ supportSystem.peekNextTicket()); // Output next ticket in priority
+System.out.println("Size of ticket queue: "+ supportSystem.getQueueSize()); // Output queue size
+System.out.println("Current Ticket: "+ supportSystem.processNextTicket()); // Output ticket1 details
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**Requirements:**
+- Use `PriorityQueue<Map<String, Object>>` for managing the tickets.
+- Handle the priority insertion for high-priority tickets.
