@@ -36,7 +36,7 @@ class SupportTicketSystem {
         ticketQueue = new PriorityQueue<>((t1, t2) ->{
             Integer p1 = (Integer) t1.get("priority");
             Integer p2 = (Integer) t2.get("priority"); 
-            return Integer.compare(p2, p2); // lower number less priority, vice-versa
+            return Integer.compare(p1, p2); // lower number less priority, vice-versa
         });
         currentTicket = null;
     }
